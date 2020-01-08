@@ -70,8 +70,14 @@ KAFKA 설치
     
     # kafka-manager 실행
      ./bin/kafka-manager
+     
+     
+     
+    # 확인 
+     http://카프카 매니저 설치 IP:9000/
 
 도움 주신 곳 - 정말 감사합니다. 
+
 도커로 설치 
 https://m.blog.naver.com/PostView.nhn?blogId=occidere&logNo=221390946271&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 카프카 매니저 설치 
