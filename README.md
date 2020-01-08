@@ -24,7 +24,7 @@ KAFKA 설치
    tar -zxvf 1.3.3.22.tar.gz
    cd kafka-manager-1.3.3.22
 
-참고와 많은 도움 
+도움 주신 곳 
 
 https://github.com/itmare/kafka/tree/master/practice
 
