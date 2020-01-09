@@ -28,9 +28,9 @@ KAFKA 설치
    root로 실행
    
    #### * docker 설치
-   yum install -y yum-utils device-mapper-persistent-data lvm2
-   yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-   yum install docker-ce -y
+      yum install -y yum-utils device-mapper-persistent-data lvm2
+      yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+      yum install docker-ce -y
    
    #### * docker-compose 설치
    curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o 
