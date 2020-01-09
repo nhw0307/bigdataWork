@@ -8,11 +8,11 @@ KAFKA 설치
 
 ### 1. 설치 환경
 
-    #### 1. virtual box
-    #### 2. centos7
-    #### 3. Docker version 19.03.5
-    #### 4. docker-compose version 1.22.0
-    #### 5. JDK, wget 설치
+    1. virtual box
+    2. centos7
+    3. Docker version 19.03.5
+    4. docker-compose version 1.22.0
+    5. JDK, wget 설치
    
      yum -y install java-1.8.0-openjdk
      yum -y install java-1.8.0-openjdk-devel
