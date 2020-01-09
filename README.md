@@ -1,24 +1,24 @@
 처음은 미비하지만 꾸준함을 토대로 문을 두드리기 위함 첫 시작
 
 KAFKA 시작 
-
-
+==========
 
 KAFKA 설치
+----------
 
 0. 설치 환경
 
-   0.1) virtual box
-   0.2) centos7
-   0.3) Docker version 19.03.5
-   0.4) docker-compose version 1.22.0
+   1. virtual box
+   2. centos7
+   3. Docker version 19.03.5
+   4. docker-compose version 1.22.0
    
-   0.2.1)JDK, wget 설치
-   yum -y install java-1.8.0-openjdk
-   yum -y install java-1.8.0-openjdk-devel
-   java-1.8.0-openjdk-devel 
-   이게 설치가 안되서 카프카 매니저 설치시에 ./sbt clean dist 이명령어로 ZIP 를 만들지 못하는 오류생김
-   yum -y install wget
+      - JDK, wget 설치
+   > yum -y install java-1.8.0-openjdk
+   > yum -y install java-1.8.0-openjdk-devel
+     java-1.8.0-openjdk-devel 
+    이게 설치가 안되서 카프카 매니저 설치시에 ./sbt clean dist 이명령어로 ZIP 를 만들지 못하는 오류생김
+   > yum -y install wget
 
 1. 일반 패키지 다운로드 후 저장 및 설치
 
