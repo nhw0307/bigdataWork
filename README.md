@@ -27,17 +27,17 @@ KAFKA 설치
    
    root로 실행
    
-   # docker 설치
+   #### docker 설치
    yum install -y yum-utils device-mapper-persistent-data lvm2
    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
    yum install docker-ce -y
    
-   # docker-compose 설치
+   #### docker-compose 설치
    curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o 
    /usr/local/bin/docker-compose
    chmod +x /usr/local/bin/docker-compose
 
-   # docker 실행
+   #### docker 실행
    systemctl start docker
 
 3. kafka-manager 설치 
@@ -49,32 +49,32 @@ KAFKA 설치
    설치 장소 
    https://github.com/yahoo/kafka-manager/releases
    
-   # kafka-manager 설치 명령어 
+   #### kafka-manager 설치 명령어 
    wget https://github.com/yahoo/kafka-manager/archive/2.0.0.2.tar.gz
    tar -zxvf /2.0.0.2.tar.gz
    cd kafka-manager-2.0.0.2
    
-   # sbt로 빌드 작업 
+   #### sbt로 빌드 작업 
    ./sbt clean dist
    
-   # 빌드 후 ZIP 생성
+   #### 빌드 후 ZIP 생성
     ~ target/universal/아래에 zip파일 생성
     
-   # 적당한 장소에 unzip하고 연결
+   #### 적당한 장소에 unzip하고 연결
     yum install unzip
     unzip -d ~/apps/ target/universal/kafka-manager-2.0.0.2.zip
     ln -s kafka-manager-2.0.0.2/ kafka-manager
     
-   # conf/application.conf에서 kafka-manager.zkhosts 수정
+   #### conf/application.conf에서 kafka-manager.zkhosts 수정
     vi conf/application.conf
     kafka-manager.zkhosts=주키퍼아이피:port  -> 192.168.x.x:2181 디폴트 포트
     
-    # kafka-manager 실행
+   #### kafka-manager 실행
      ./bin/kafka-manager
      
      
      
-    # 확인 
+   #### 확인 
      http://카프카 매니저 설치 IP:9000/
 
 도움 주신 곳 - 정말 감사합니다. 
