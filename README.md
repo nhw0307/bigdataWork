@@ -14,11 +14,11 @@ KAFKA 설치
    4. docker-compose version 1.22.0
    
       - JDK, wget 설치
-   > yum -y install java-1.8.0-openjdk
-   > yum -y install java-1.8.0-openjdk-devel
-     java-1.8.0-openjdk-devel 
-    이게 설치가 안되서 카프카 매니저 설치시에 ./sbt clean dist 이명령어로 ZIP 를 만들지 못하는 오류생김
-   > yum -y install wget
+      yum -y install java-1.8.0-openjdk
+      yum -y install java-1.8.0-openjdk-devel
+         java-1.8.0-openjdk-devel 
+         이게 설치가 안되서 카프카 매니저 설치시에 ./sbt clean dist 이명령어로 ZIP 를 만들지 못하는 오류생김
+      yum -y install wget
 
 ### 2. 일반 패키지 다운로드 후 저장 및 설치
 
